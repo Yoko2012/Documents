@@ -1,0 +1,7 @@
+// A BaseSession manages general session state. This includes negotiation
+// of both the application-level and network-level protocols:  the former
+// defines what will be sent and the latter defines how it will be sent.  Each
+// network-level protocol is represented by a Transport object.  Each Transport
+// participates in the network-level negotiation.  The individual streams of
+// packets are represented by TransportChannels.  The application-level protocol
+// is represented by SessionDecription objects.
