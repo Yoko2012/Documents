@@ -99,3 +99,19 @@ setenv serverip 10.0.0.214
 
 4连接成功后可以调试程序：
 如：输入　c运行程序．
+
+
+
+
+4)烧写文件系统
+        sf probe 0
+        mw.b 82000000 ff 1b00000
+        tftp 0x82000000 rootfs.jffs2
+        sf erase 500000 1b00000
+        sf write 82000000 500000 1b00000
+    
+郭总  16:41:00
+rootfs.jffs2
+郭总  16:45:48
+setenv serverip 10.0.0.214
+        setenv ipaddr 10.0.0.110
